@@ -1,0 +1,686 @@
+
+:root {
+    --bg: #0f1115;
+    --card: #1a1d24;
+    --amber: #ffb300;
+    --amber-hover: #ffca28;
+    --blue: #2196f3;
+    --text: #eaeaea;
+    --muted: #9aa0a6;
+}
+
+
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  
+}
+
+
+header {
+    background: #14161c;
+    padding: 20px;
+    border-bottom: 1px solid #222;
+}
+
+h1 {
+    color: var(--amber);
+    font-weight: 700;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: var(--text);
+    text-decoration: none;
+    margin-right: 20px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: var(--blue);
+}
+
+
+main {
+   
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+
+section {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h3 {
+    color: var(--amber);
+    font-size: 32px;
+}
+
+section p {
+    color: var(--muted);
+}
+
+.filter-bar {
+    background: var(--card);
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #222;
+    margin-bottom: 40px;
+}
+
+.filter-bar h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 10px;
+    flex-wrap: nowrap; 
+}
+
+.filter-buttons button {
+    padding: 10px 20px;
+    border: 2px solid var(--blue);
+    background: transparent;
+    color: var(--blue);
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.filter-buttons button:hover {
+    background: var(--blue);
+    color: white;
+}
+
+.filter-buttons button:first-child {
+    background: var(--amber);
+    border-color: var(--amber);
+    color: black;
+}
+
+.filter-buttons button:first-child:hover {
+    background: var(--amber-hover);
+}
+
+
+.providers-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.provider-card {
+    background: var(--card);
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #222;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.provider-card:hover {
+    border-color: var(--blue);
+    transform: translateY(-5px);
+}
+
+.provider-card h4 {
+    color: var(--blue);
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.provider-card p {
+    color: var(--muted);
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.provider-card p:nth-of-type(1) {
+    color: var(--text);
+    font-weight: 600;
+}
+
+.provider-card p:nth-of-type(2) {
+    color: var(--amber);
+    font-weight: 600;
+}
+
+.provider-card p:last-of-type {
+    color: var(--amber);
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.provider-card button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: var(--amber);
+    color: black;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 15px;
+}
+
+.provider-card button:hover {
+    background: var(--amber-hover);
+    transform: translateY(-2px);
+}
+
+
+footer {
+    background: #14161c;
+    text-align: center;
+    padding: 30px;
+    color: var(--muted);
+    border-top: 2px solid var(--amber);
+    margin-top: 60px;
+}
+
+
+main {
+    padding: 40px 20px;
+}
+
+h2 {
+    color: var(--amber);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: var(--muted);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.booking-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.booking-section {
+    background: var(--card);
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    color: var(--text);
+    margin-bottom: 8px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #333;
+    background: #161922;
+    color: var(--amber);
+    font-family: Arial, sans-serif;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: var(--blue);
+    outline: none;
+}
+
+.datetime-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.checkbox-label input {
+    width: auto;
+    margin-right: 10px;
+}
+
+
+button {
+    width: 100%;
+    padding: 14px;
+    border-radius: 8px;
+    border: none;
+    background: var(--amber);
+    color: black;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* ==========================================================
+   Home Page Enhanced Layout Styles
+   ========================================================== */
+.home-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.hero-section {
+    text-align: center;
+    padding: 45px 20px 30px;
+}
+
+.hero-title {
+    font-size: 38px;
+    color: var(--amber);
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.hero-subtitle {
+    color: var(--muted);
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.hero-search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+.hero-search-input {
+    width: 360px;
+    padding: 12px 18px;
+    border-radius: 8px;
+    border: 1px solid #333;
+    background: #161922;
+    color: var(--amber);
+    outline: none;
+    font-size: 15px;
+}
+
+.hero-search-input:focus {
+    border-color: var(--blue);
+}
+
+.hero-search-btn {
+    width: auto;
+    background: var(--amber);
+    color: black;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s;
+}
+
+.hero-search-btn:hover {
+    background: var(--amber-hover);
+    transform: translateY(-2px);
+}
+
+.hero-actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.btn-hero-primary {
+    background: var(--amber);
+    color: black;
+    padding: 12px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.btn-hero-primary:hover {
+    background: var(--amber-hover);
+    transform: translateY(-2px);
+}
+
+.btn-hero-secondary {
+    background: transparent;
+    border: 2px solid var(--blue);
+    color: var(--blue);
+    padding: 10px 26px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.btn-hero-secondary:hover {
+    background: var(--blue);
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Stats Strip */
+.stats-strip {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.stat-card {
+    background: var(--card);
+    border: 1px solid #222;
+    border-radius: 12px;
+    padding: 24px 20px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.stat-card:hover {
+    border-color: var(--blue);
+    transform: translateY(-5px);
+}
+
+.stat-number {
+    font-size: 38px;
+    font-weight: 700;
+    color: var(--amber);
+    margin-bottom: 6px;
+}
+
+.stat-label {
+    color: var(--muted);
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Sections */
+.home-section {
+    margin: 55px 0;
+    text-align: center;
+}
+
+.home-section h2 {
+    color: var(--amber);
+    font-size: 28px;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.home-section .section-subtitle {
+    color: var(--muted);
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+/* Popular Services Grid (6 cards) */
+.home-services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.home-service-card {
+    background: var(--card);
+    border: 1px solid #222;
+    border-radius: 12px;
+    padding: 25px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 0.3s;
+}
+
+.home-service-card:hover {
+    border-color: var(--blue);
+    transform: translateY(-5px);
+}
+
+.home-service-card .category-pill {
+    align-self: flex-start;
+    background: var(--blue);
+    color: white;
+    padding: 4px 10px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.home-service-card h3 {
+    color: var(--amber);
+    font-size: 20px;
+    margin: 6px 0 10px;
+}
+
+.home-service-card p {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.5;
+    flex-grow: 1;
+    margin-bottom: 15px;
+}
+
+.home-service-card .price-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
+
+.home-service-card .price-text {
+    color: var(--amber);
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.home-service-card .btn-card {
+    width: auto;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 13px;
+    background: var(--amber);
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.home-service-card .btn-card:hover {
+    background: var(--amber-hover);
+}
+
+/* How It Works Grid */
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.step-card {
+    background: var(--card);
+    border: 1px solid #222;
+    border-radius: 12px;
+    padding: 25px 20px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.step-card:hover {
+    border-color: var(--blue);
+    transform: translateY(-5px);
+}
+
+.step-number {
+    display: inline-flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(33, 150, 243, 0.15);
+    color: var(--blue);
+    border: 2px solid var(--blue);
+    font-size: 18px;
+    font-weight: 700;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.step-card h3 {
+    color: var(--text);
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+
+.step-card p {
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+/* Why Choose Us Grid */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.feature-card {
+    background: var(--card);
+    border: 1px solid #222;
+    border-radius: 12px;
+    padding: 30px 24px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    border-color: var(--blue);
+    transform: translateY(-5px);
+}
+
+.feature-icon {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.feature-card h3 {
+    color: var(--amber);
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* CTA Band */
+.cta-band {
+    background: linear-gradient(135deg, #14161c 0%, #1a1d24 100%);
+    border: 1px solid var(--amber);
+    border-radius: 14px;
+    padding: 45px 30px;
+    text-align: center;
+    margin: 55px 0;
+}
+
+.cta-band h2 {
+    color: var(--amber);
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.cta-band p {
+    color: var(--muted);
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.btn-cta {
+    background: var(--amber);
+    color: black;
+    padding: 13px 36px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.btn-cta:hover {
+    background: var(--amber-hover);
+    transform: translateY(-2px);
+}
+
+/* Responsive Media Queries */
+@media (max-width: 900px) {
+    .home-services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .steps-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-title {
+        font-size: 28px;
+    }
+    .hero-subtitle {
+        font-size: 15px;
+    }
+    .hero-search-input {
+        width: 100%;
+    }
+    .hero-search-btn {
+        width: 100%;
+    }
+    .stats-strip {
+        grid-template-columns: 1fr;
+    }
+    .home-services-grid {
+        grid-template-columns: 1fr;
+    }
+    .providers-grid {
+        grid-template-columns: 1fr;
+    }
+    .steps-grid {
+        grid-template-columns: 1fr;
+    }
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
